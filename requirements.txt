@@ -1,0 +1,9 @@
+paraphrase-metrics
+spacy
+evaluate
+datasets
+transformers
+bert-score
+seaborn
+fire
+fairscale
