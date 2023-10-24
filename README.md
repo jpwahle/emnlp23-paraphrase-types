@@ -1,6 +1,6 @@
 # Paraphrase Types for Generation and Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2210.03568-b31b1b.svg)](https://arxiv.org/abs/2210.03568)
+[![arXiv](https://img.shields.io/badge/arXiv-2310.14863-b31b1b.svg)](https://arxiv.org/abs/2310.14863)
 [![HuggingFace Spaces](https://img.shields.io/badge/🤗-Spaces-ffce1c.svg)](https://huggingface.co/spaces/jpwahle/paraphrase-type-tasks)
 [![HuggingFace Datasets](https://img.shields.io/badge/🤗-Datasets-ffce1c.svg)](https://huggingface.co/datasets/jpwahle/etpc)
 
