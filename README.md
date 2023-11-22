@@ -93,7 +93,6 @@ To evaluate on qqp, run `src/eval_detection_chatgpt.py` and use `src/eval_genera
 
 There are many ways in which you can participate in this project, for example:
 
-* [Submit bugs and feature requests](https://github.com/jpwahle/emnlp23-paraphrase-types/issue), and help us verify as they are checked in
 * Review [source code changes](https://github.com/jpwahle/emnlp23-paraphrase-types/pulls)
 
 ## Citation
