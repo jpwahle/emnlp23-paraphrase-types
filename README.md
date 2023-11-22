@@ -71,7 +71,7 @@ python3 -m torch.distributed.run --nproc_per_node 8 src/llama_generation.py --ck
 
 Replace `<ckpt_dir>`, `<tokenizer_path>`, `<dataset_name>`, and `<params>` with your specific values.
 
-* `<ckpt_dir>`: The directory where the model checkpoints are stored after downloading from the [LLaMA 2 repo](https://github.com/facebookresearch/llama).
+* `<ckpt_dir>`: The directory where the model checkpoints are stored after downloading from the [LLaMA repo](https://github.com/facebookresearch/llama).
 * `<tokenizer_path>`: The path to the tokenizer used by the model.
 * `<data_file>`: The file containing prompts and completions.
 
