@@ -129,17 +129,13 @@ def evaluate(y_true, y_pred):
         y_true = [[1, 0, 1], [0, 1, 0]]
         y_pred = [[1, 1, 0], [0, 1, 1]]
 
-        f1, acc = evaluate(y_true, y_pred)
-        print(f1)
+        acc = evaluate(y_true, y_pred)
         print(acc)
         ```
     """
 
     y_true_bin = [[1 if t in labels else 0 for t in ALL_TYPES] for labels in y_true]
     y_pred_bin = [[1 if t in labels else 0 for t in ALL_TYPES] for labels in y_pred]
-
-    # Compute F1 score
-    f1 = f1_score(y_true_bin, y_pred_bin, average="micro")
 
     # Convert lists to numpy arrays for easier calculations
     y_true_np = np.array(y_true_bin)
@@ -148,7 +144,7 @@ def evaluate(y_true, y_pred):
     # Calculate per-class accuracy
     acc = np.mean(np.equal(y_true_np, y_pred_np).astype(int))
 
-    return f1, acc
+    return acc
 
 
 def main(
@@ -180,11 +176,10 @@ def main(
         max_batch_size=max_batch_size,
         num_examples=num_examples,
     )
-    f1, acc = evaluate(y_true, y_pred)
+    _, acc = evaluate(y_true, y_pred)
 
     print(f"Model: {ckpt_dir}")
     print(f"Eval set size: {len(y_pred)}")
-    print(f"F1 Score: {f1:.2f}")
     print(f"Accuracy: {acc:.2f}")
 
 
