@@ -63,6 +63,19 @@ This will create four files: `detection_train.jsonl`, `detection_test.jsonl`, `g
 
 ### LLaMA
 
+> Update 16-12-2023: We have now also fine-tuned LLaMA 2 models (with PEFT / LORA adapters), which can be found below.
+
+| Model   | Params | Dataset | Task | Link |
+|---------|--------|---------|------|------|
+| LLaMA 2 | 7B     | ETPC    | PTG  |  [llama-7b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-7b-etpc.zip)    |
+| LLaMA 2 | 13B    | ETPC    | PTG  |  [llama-13b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-13b-etpc.zip)    |
+| LLaMA 2 | 70B    | ETPC    | PTG  |  [llama-70b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-70b-etpc.zip)    |
+| LLaMA 2 | 7B     | QQP     | PD   |  [llama-7b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-7b-qqp.zip)    |
+| LLaMA 2 | 13B    | QQP     | PD   |  [llama-13b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-13b-qqp.zip)    |
+| LLaMA 2 | 70B    | QQP     | PD   |  [llama-70b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-70b-qqp.zip)    |
+
+PTG = Paraphrase Type Generation, PD = Paraphrase Detection 
+
 To run LLaMA, execute `src/llama_generation.py` or `src/llama_detection.py`.
 
 ```bash
