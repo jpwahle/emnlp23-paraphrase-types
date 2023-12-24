@@ -112,13 +112,22 @@ There are many ways in which you can participate in this project, for example:
 
 ```bib
 @inproceedings{wahle-etal-2023-paraphrase,
-	title        = {Paraphrase Types for Generation and Detection},
-	author       = {Wahle, Jan Philip and Gipp, Bela and Ruas, Terry},
-	year         = 2023,
-	month        = dec,
-	booktitle    = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
-	publisher    = {Association for Computational Linguistics},
-	address      = {Singapore, Singapore}
+    title = "Paraphrase Types for Generation and Detection",
+    author = "Wahle, Jan Philip  and
+      Gipp, Bela  and
+      Ruas, Terry",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.746",
+    doi = "10.18653/v1/2023.emnlp-main.746",
+    pages = "12148--12164",
+    abstract = "Current approaches in paraphrase generation and detection heavily rely on a single general similarity score, ignoring the intricate linguistic properties of language. This paper introduces two new tasks to address this shortcoming by considering paraphrase types - specific linguistic perturbations at particular text positions. We name these tasks Paraphrase Type Generation and Paraphrase Type Detection. Our results suggest that while current techniques perform well in a binary classification scenario, i.e., paraphrased or not, the inclusion of fine-grained paraphrase types poses a significant challenge. While most approaches are good at generating and detecting general semantic similar content, they fail to understand the intrinsic linguistic variables they manipulate. Models trained in generating and identifying paraphrase types also show improvements in tasks without them. In addition, scaling these models further improves their ability to understand paraphrase types. We believe paraphrase types can unlock a new paradigm for developing paraphrase models and solving tasks in the future.",
 }
 ```
 
