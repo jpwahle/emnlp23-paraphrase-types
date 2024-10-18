@@ -70,13 +70,6 @@ This will create four files: `detection_train.jsonl`, `detection_test.jsonl`, `g
 | LLaMA 3.1 | 8B     | ETPC    | PTG  |  [llama-3.1-8b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-3.1-8b-etpc.zip)    |
 | LLaMA 3.1 | 70B    | ETPC    | PTG  |  [llama-3.1-70b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-3.1-70b-etpc.zip)    |
 
-> Update 01-10.2024: We have released the GPT-style models for gpt-3.5-turbo and gpt-4o-mini. The identifiers are below.
-
-| Model   | Identifier |
-|---------|------|
-| gpt-4o-mini | ft:gpt-4o-mini-2024-07-18:personal::ADQ0IcdZ |
-| gpt-3.5-turbo | ft:gpt-3.5-turbo-0613:personal::7xbU0xQ2 |
-
 > Update 16-12-2023: We have now also fine-tuned LLaMA 2 models (with PEFT / LORA adapters), which can be found below.
 
 | Model   | Params | Dataset | Task | Link |
@@ -110,7 +103,14 @@ Under `src/llama_transfer.py`, you can test the prompted and fine-tuned model on
 
 ### ChatGPT
 
-To fine-tune ChatGPT-3.5, execute `src/finetune_chatgpt.py`. Specify either the `detection_train.jsonl` or `generation_train.jsonl` file that was generated using the `generate_prompts_*` scripts.
+> Update 01-10.2024: We have released the GPT-style models for gpt-3.5-turbo and gpt-4o-mini. The identifiers are below.
+
+| Model   | Identifier |
+|---------|------|
+| gpt-4o-mini | ft:gpt-4o-mini-2024-07-18:personal::ADQ0IcdZ |
+| gpt-3.5-turbo | ft:gpt-3.5-turbo-0613:personal::7xbU0xQ2 |
+
+To fine-tune GPT-based models, execute `src/finetune_chatgpt.py.` Specify either the `detection_train.jsonl` or `generation_train.jsonl` file that was generated using the `generate_prompts_*` scripts.
 
 Evaluating the fine-tuned model on paraphrase type generation and detection can be achieved by running `src/eval_type_detection_chatgpt.py` and `src/eval_generation_chatgpt.py` and providing the `<model_id>` of the finetuned model and the `<data_file>` which can be `generation_test.jsonl` or `detection_test.jsonl`.
 
