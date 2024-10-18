@@ -63,16 +63,30 @@ This will create four files: `detection_train.jsonl`, `detection_test.jsonl`, `g
 
 ### LLaMA
 
+> Update 18-10-2024: We have now also fine-tuned LLaMA 3.1 models (with PEFT / LORA adapters), which can be found below.
+
+| Model   | Params | Dataset | Task | Link |
+|---------|--------|---------|------|------|
+| LLaMA 3.1 | 8B     | ETPC    | PTG  |  [llama-3.1-8b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-3.1-8b-etpc.zip)    |
+| LLaMA 3.1 | 70B    | ETPC    | PTG  |  [llama-3.1-70b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-3.1-70b-etpc.zip)    |
+
+> Update 01-10.2024: We have released the GPT-style models for gpt-3.5-turbo and gpt-4o-mini. The identifiers are below.
+
+| Model   | Identifier |
+|---------|------|
+| gpt-4o-mini | ft:gpt-4o-mini-2024-07-18:personal::ADQ0IcdZ |
+| gpt-3.5-turbo | ft:gpt-3.5-turbo-0613:personal::7xbU0xQ2 |
+
 > Update 16-12-2023: We have now also fine-tuned LLaMA 2 models (with PEFT / LORA adapters), which can be found below.
 
 | Model   | Params | Dataset | Task | Link |
 |---------|--------|---------|------|------|
-| LLaMA 2 | 7B     | ETPC    | PTG  |  [llama-7b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-7b-etpc.zip)    |
-| LLaMA 2 | 13B    | ETPC    | PTG  |  [llama-13b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-13b-etpc.zip)    |
-| LLaMA 2 | 70B    | ETPC    | PTG  |  [llama-70b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-70b-etpc.zip)    |
-| LLaMA 2 | 7B     | QQP     | PD   |  [llama-7b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-7b-qqp.zip)    |
-| LLaMA 2 | 13B    | QQP     | PD   |  [llama-13b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-13b-qqp.zip)    |
-| LLaMA 2 | 70B    | QQP     | PD   |  [llama-70b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-70b-qqp.zip)    |
+| LLaMA 2 | 7B     | ETPC    | PTG  |  [llama-2-7b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-7b-etpc.zip)    |
+| LLaMA 2 | 13B    | ETPC    | PTG  |  [llama-2-13b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-13b-etpc.zip)    |
+| LLaMA 2 | 70B    | ETPC    | PTG  |  [llama-2-70b-etpc](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-70b-etpc.zip)    |
+| LLaMA 2 | 7B     | QQP     | PD   |  [llama-2-7b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-7b-qqp.zip)    |
+| LLaMA 2 | 13B    | QQP     | PD   |  [llama-2-13b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-13b-qqp.zip)    |
+| LLaMA 2 | 70B    | QQP     | PD   |  [llama-2-70b-qqp](https://paraphrase-types.s3.us-east-2.amazonaws.com/models/llama-2-70b-qqp.zip)    |
 
 PTG = Paraphrase Type Generation, PD = Paraphrase Detection 
 
