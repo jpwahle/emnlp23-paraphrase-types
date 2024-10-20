@@ -83,6 +83,11 @@ This will create four files: `detection_train.jsonl`, `detection_test.jsonl`, `g
 
 PTG = Paraphrase Type Generation, PD = Paraphrase Detection 
 
+The prompt template for LLaMA-style models is the following:
+```txt
+"Instruction: {instruction}Given the following sentence, generate a paraphrase with the following types. Sentence: {sentence}. Paraphrase Types: {paraphrase_type}\n\nAnswer:"
+```
+
 To run LLaMA, execute `src/llama_generation.py` or `src/llama_detection.py`.
 
 ```bash
@@ -109,6 +114,15 @@ Under `src/llama_transfer.py`, you can test the prompted and fine-tuned model on
 |---------|------|
 | gpt-4o-mini | ft:gpt-4o-mini-2024-07-18:personal::ADQ0IcdZ |
 | gpt-3.5-turbo | ft:gpt-3.5-turbo-0613:personal::7xbU0xQ2 |
+
+The prompt template for the GPT-style models is the following:
+
+```json
+{
+    "role": "user",
+    "content": "Given the following sentence, generate a paraphrase with the following types. Sentence: {sentence}. Paraphrase Types: {paraphrase_type}"
+}
+```
 
 To fine-tune GPT-based models, execute `src/finetune_chatgpt.py.` Specify either the `detection_train.jsonl` or `generation_train.jsonl` file that was generated using the `generate_prompts_*` scripts.
 
